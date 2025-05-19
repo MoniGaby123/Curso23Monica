@@ -1,9 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 /*Barra de navegacion*/
 nav {
   background-color: crimson ;
   color: white;
   font-size: 25px;
   display: flex;
+  /*eje principal, solo se puede usar si el elemento es flex*/
+  justify-content: space-between;
+  /*eje secundario, solo se puede usar si el elemento es flex*/
+  align-items: center;
+  /*height es la altura que le doy verticalmente al cuadro invisible*/
+  height: 100px;
+  /*Distancia entre el borde de la caja y su contenido*/
+  /* 
+  padding: 20px; 20px en todas las direcciones
+  padding: 20px 0; 20px arriba y abajo, 0 derecha izquierda
+  padding: 20px 0 20px 0; 20px arriba, 0 derecha, 20px abajo, 0 izquierda
+  */
+  padding: 20px;
+  /*
+  Radio de los bordes, se lee arriba izquierda, arriba derecha,
+  abajo izquierda, abajo derecha*/
+  border-radius: 0 0 20px 20px;
 }
 
 /*
@@ -12,4 +34,12 @@ nav {
 */
 nav div {
   display: flex;
+  /*Espaciado entre los elementos de la fila o columna*/
+  gap: 20px;
 }
+
+/*
+nav div a {
+  margin: 0 15px;
+}
+*/
