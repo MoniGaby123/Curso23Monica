@@ -38,6 +38,32 @@ nav div {
   gap: 20px;
 }
 
+/*las pseudoclases manejan el estado de un elemento
+:hover se activa cuando el mouse pasa por encima del elemento
+:active se activa cuando el elemento es seleccionado
+:visited se activa cuando el elemento es visitado
+:link se activa cuando el elemento es un link
+:first-child se activa cuando el elemento es el primer hijo de su padre
+:last-child se activa cuando el elemento es el ultimo hijo de su padre
+*/
+
+nav div a:visited, nav div a:link {
+  color: white;
+  text-decoration: none;
+}
+
+#inicio:hover {
+  color: blueviolet;
+}
+
+#introduccion:hover {
+  color: rgb(0, 0, 12);
+}
+/* 
+.enlace:hover {
+  color: green;
+}
+*/
 /*
 nav div a {
   margin: 0 15px;
