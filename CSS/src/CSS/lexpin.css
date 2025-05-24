@@ -69,3 +69,21 @@ nav div a {
   margin: 0 15px;
 }
 */
+
+/*MAIN*/
+main {
+  height: 80vh;
+  min-height: 70vh;
+  background-color: gray;
+}
+
+/*
+  GRID
+  grid es un tipo de display que permite manejar
+  un sistema de filas y columnas
+*/
+
+header {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
