@@ -93,8 +93,7 @@ header {
   background-image: url(https://i.pinimg.com/736x/90/13/3b/90133ba2d8d5a3a316d5376462bf0e63.jpg);
   background-size: cover;
   /* coloca todo lo seleccionado en transparente
-  opacity: 0.2
-  ;
+  opacity: 0.2;
   */
   border-radius: 25px;
   grid-template-columns: 1fr 1fr;
