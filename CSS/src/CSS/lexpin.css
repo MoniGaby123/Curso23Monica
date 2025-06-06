@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  z-index: 10;
 }
 
 /*Barra de navegacion*/
@@ -14,7 +15,7 @@ nav {
   /*eje secundario, solo se puede usar si el elemento es flex*/
   align-items: center;
   /*height es la altura que le doy verticalmente al cuadro invisible*/
-  height: 80px;
+  height: 50px;
   /*Distancia entre el borde de la caja y su contenido*/
   /* 
   padding: 20px; 20px en todas las direcciones
@@ -46,6 +47,32 @@ nav div {
 :first-child se activa cuando el elemento es el primer hijo de su padre
 :last-child se activa cuando el elemento es el ultimo hijo de su padre
 */
+
+/*
+position es una propiedad que permite manejar la posicion de un elemento
+static: posicion normal
+relative: posicion relativa al elemento padre (puedes moverlo)
+alsolute: posicion absoluta al elemento padre (puedes moverlo)
+fixed: posicion fija al viewport (pantalla) (se queda fijo en la pantalla)
+sticky: posicion fija al scroll (tiene suespacio en el html, perose queda fijo en la pantalla)
+*/
+
+header::before {
+  background-image: url(https://i.pinimg.com/736x/90/13/3b/90133ba2d8d5a3a316d5376462bf0e63.jpg);
+  background-size: cover;
+  background-position: center;
+  content: "";
+  position: absolute;
+  z-index: 5;
+  opacity: 0.15;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 25px;
+  border: 10px solid white;
+  box-shadow: 5px 10px 12px 10px rgb(0, 0, 0, 1) ;
+}
 
 nav div a:visited, nav div a:link {
   color: white;
@@ -89,10 +116,9 @@ header {
   height: 80vh;
   min-height: 70vh;
   display: grid;
+  /* color de fondo
   background-color: rgb(181, 128, 230);
-  background-image: url(https://i.pinimg.com/736x/90/13/3b/90133ba2d8d5a3a316d5376462bf0e63.jpg);
-  background-size: cover;
-  /* coloca todo lo seleccionado en transparente
+  coloca todo lo seleccionado en transparente
   opacity: 0.2;
   */
   border-radius: 25px;
@@ -116,6 +142,7 @@ header {
   columna se utiliza la propiedad
   grid-template-rows: VALORpx;
   */
+  position: relative;
 }
 
 header > div, header > p {
@@ -126,6 +153,12 @@ header > div, header > p {
   gap: 20px;
 }
 
+h1 {
+  font-size: 50px;
+  color: black;
+  text-align: center;
+  text-shadow: 2px 2px 5px black;
+}
 /*ANIMACION*/
 .gradient-background {
   background: linear-gradient(290deg,#ae37c8,#f312e4,#e5aae2,#d297f7);
